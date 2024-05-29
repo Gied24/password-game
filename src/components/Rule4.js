@@ -10,7 +10,7 @@ class Rule4 extends Component {
       <Rule5 password={this.props.password} />
       <Display group='pass' name='Rule 4'>It Contains atleast two Special Character</Display>
       </> :  
-      <Display group='fail' name='Rule 4'>It must contain Special Character</Display>
+      <Display group='fail' name='Rule 4'>It must contain atleast two Special Character</Display>
       return result
     }
 }
