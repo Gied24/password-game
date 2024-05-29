@@ -17,6 +17,20 @@ class App extends Component {
     return (
       <div className="App">
         <div className='container'>
+          <div>
+          
+          <div className='game'>
+          <h2>Password Game</h2>
+          <label>Enter Password</label>
+          <input value={this.state.password} onChange={(e) => this.setState({password:e.target.value})}></input>
+          <div>
+          </div>
+          <Rule1 password={this.state.password} name='rule1' />
+          </div>
+          <hr></hr>
+          <div>
+          </div>
+          </div>
           <div className='checker'>
             <h2>Password Checker</h2>
             <input value={this.state.test_password} onChange={(e) => this.setState({test_password:e.target.value})}></input>
@@ -28,19 +42,6 @@ class App extends Component {
                       <a href='https://password.kaspersky.com/'>Kaspersky</a>
             </div>
             </div>
-          <div>
-          <hr></hr>
-          <div className='game'>
-          <h2>Password Game</h2>
-          <label>Enter Password</label>
-          <input value={this.state.password} onChange={(e) => this.setState({password:e.target.value})}></input>
-          <div>
-          </div>
-          <Rule1 password={this.state.password} name='rule1' />
-          </div>
-          <div>
-          </div>
-          </div>
         </div>
         
     </div>
